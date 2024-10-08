@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 // Notes:
-// 1. You can save API KEY in .env file for learning purposes and if's free API.
-//  Someone may be able to access API KEY here and it may cost money.
-// 2. Always exclude .env file from git by adding it in gitignore file.
-// 3. If you use Vite to setup the project, then keep in mind that all .env variables should begin with VITE_
-// 4. Always write .env variable with capital letters like this VITE_API_KEY
-// 5. Don'f forget to include empty array in your initial data state (like birds in this example)
-//  or use ternary operator like below in comments
+// 1. You can save the API key in a .env file for learning purposes if it's a free API.
+//    However, someone might be able to access the API key, which could result in costs.
+// 2. Always exclude the .env file from git by adding it to the .gitignore file.
+// 3. If you're using Vite to set up the project, keep in mind that all .env variables must begin with VITE_.
+// 4. Always write .env variables in capital letters, like VITE_API_KEY.
+// 5. Don’t forget to include an empty array in your initial state (like birds in this example),
+//    or use a ternary operator as shown in the comments below.
 
 function App() {
   const API_KEY = import.meta.env.VITE_API_KEY;
